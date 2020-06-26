@@ -15,18 +15,25 @@ import styles from './App.module.css';
 
 class App extends React.Component {
 
+    state = {
+        data: {},
+    }
+
     async componentDidMount () {
-        const data = await fetchApi();
-        console.log(data);
+        const fetchedData = await fetchApi();
+        console.log(fetchedData);
+        this.setState({ data: fetchedData })
     }
 
     render () {
+        const { data } = this.state;
+        console.log('data',data);
 
         return (
             <div className={styles.container}>
+                <Cards data={data} /> 
                 <Chart />
                 <CountryPicker />
-                <Cards /> 
             </div>
         )
     }
