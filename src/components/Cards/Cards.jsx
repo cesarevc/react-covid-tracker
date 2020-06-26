@@ -10,8 +10,7 @@ function Cards ({ data: { confirmed, recovered, deaths, lastUpdate } }) {
     if(!confirmed) {
         return 'Loading ...'
     }
-    // const { confirmed, recovered, deaths, lastUpdate } = data;
-    // console.log('wiwi', data);
+
     return (
         <div className={styles.container}>
             <Grid container spacing={3} justify="center">
