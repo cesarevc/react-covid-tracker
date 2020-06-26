@@ -1,6 +1,6 @@
 # COVID-19 TRACKER
 
-_This is a practice develping frontend covid-19 tracker using react_
+_This is a practice developing a frontend COVID-19 tracker using react_
 
 ![alt text](./src/assets/covid-tracker.gif)
 
